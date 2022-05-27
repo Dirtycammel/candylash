@@ -92,8 +92,9 @@
                     color: rgb(10, 10, 10);
                     position: relative;
                     animation: heading;
-                    animation-duration: 2s;
+                    animation-duration: 3.5s;
                     animation-fill-mode: forwards;
+                    animation-timing-function: ease-in;
                 }
                 
                 .main-header p {
