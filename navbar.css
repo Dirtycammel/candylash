@@ -451,14 +451,14 @@
                     .slider-frame {
                         overflow: hidden;
                         height: 700px;
-                        width: 500px;
+                        width: 400px;
                         margin: auto;
                         margin-top: 20px;
                     }
                     .slide-images {
-                        width: 1500px;
+                        width: 1200px;
                         height: 700px;
-                        margin: 0 0 0 -1000px;
+                        margin: 0 0 0 -800px;
                         position: relative;
                         -webkit-animation-name: slide_animation;
                         -webkit-animation-duration: 30s;
@@ -468,12 +468,12 @@
                     }
                     .img-container {
                         height: 500px;
-                        width: 500px;
+                        width: 400px;
                         position: relative;
                         float: left;
                     }
                     .img1 {
-                        width: 500px;
+                        width: 400px;
                         height: 400px;
                     }
                     /*---------slide animatio---------*/
@@ -485,22 +485,22 @@
                             left: 0px
                         }
                         20% {
-                            left: 500px
+                            left: 400px
                         }
                         30% {
-                            left: 500px
+                            left: 400px
                         }
                         40% {
-                            left: 1000px
+                            left: 800px
                         }
                         50% {
-                            left: 1000px
+                            left: 800px
                         }
                         60% {
-                            left: 500px
+                            left: 400px
                         }
                         70% {
-                            left: 500px
+                            left: 400px
                         }
                         80% {
                             left: 0px
