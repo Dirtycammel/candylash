@@ -97,6 +97,17 @@
                     animation-timing-function: ease-in;
                 }
                 
+                  .main-header .contact {
+                    font-size: 50px;
+                    color: rgb(10, 10, 10);
+                    position: relative;
+                    -webkit-animation: heading;
+                    -webkit-animation-duration: 3.5s;
+                    -webkit-animation-fill-mode: forwards;
+                    -webkit-animation-timing-function: ease-in;
+                }
+
+                
                 .main-header p {
                     font-size: 20px;
                     width: 1200PX;
