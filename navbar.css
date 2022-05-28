@@ -219,14 +219,7 @@
                     padding-top: 50px;
                 }
                 
-                @media(max-width:1200px) {
-                    .slider-frame {
-                        overflow: hidden;
-                        height: 700px;
-                        width: 1000px;
-                        margin: auto;
-                        margin-top: 20px;
-                    }
+               
                     .slide-images {
                         width: 3000px;
                         height: 600px;
@@ -238,7 +231,8 @@
                         -webkit-animation-direction: alternate;
                         -webkit-animation-play-state: ease-in-out;
                     }
-                    .img-container {
+                  
+                        .img-container {
                         height: 500px;
                         width: 1000px;
                         position: relative;
