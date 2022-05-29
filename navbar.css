@@ -91,22 +91,11 @@
                     font-size: 50px;
                     color: rgb(10, 10, 10);
                     position: relative;
-                    animation: heading;
-                    animation-duration: 3.5s;
-                    animation-fill-mode: forwards;
-                    animation-timing-function: ease-in;
-                }
-                
-                  .main-header .contact {
-                    font-size: 50px;
-                    color: rgb(10, 10, 10);
-                    position: relative;
                     -webkit-animation: heading;
                     -webkit-animation-duration: 3.5s;
                     -webkit-animation-fill-mode: forwards;
                     -webkit-animation-timing-function: ease-in;
                 }
-
                 
                 .main-header p {
                     font-size: 20px;
@@ -136,11 +125,12 @@
                     width: 1200px;
                     margin: auto;
                     margin-top: 20px;
+                    text-align: center;
                 }
                 
                 .slide-images {
                     width: 3600px;
-                    height: 700px;
+                    height: 800px;
                     margin: 0 0 0 -2400px;
                     position: relative;
                     -webkit-animation-name: slide_animation;
@@ -151,14 +141,14 @@
                 }
                 
                 .img-container {
-                    height: 700px;
+                    height: 800px;
                     width: 1200px;
                     position: relative;
                     float: left;
                 }
                 
                 .img1 {
-                    width: 1200px;
+                    width: auto;
                     height: 700px;
                 }
                 /*---------slide animatio---------*/
@@ -219,7 +209,14 @@
                     padding-top: 50px;
                 }
                 
-               
+                @media(max-width:1200px) {
+                    .slider-frame {
+                        overflow: hidden;
+                        height: 700px;
+                        width: 1000px;
+                        margin: auto;
+                        margin-top: 20px;
+                    }
                     .slide-images {
                         width: 3000px;
                         height: 600px;
@@ -231,15 +228,14 @@
                         -webkit-animation-direction: alternate;
                         -webkit-animation-play-state: ease-in-out;
                     }
-                  
-                        .img-container {
+                    .img-container {
                         height: 500px;
                         width: 1000px;
                         position: relative;
                         float: left;
                     }
                     .img1 {
-                        width: 1000px;
+                        width: auto;
                         height: 600px;
                     }
                     /*---------slide animatio---------*/
@@ -288,62 +284,66 @@
                         margin: auto;
                         margin-top: 20px;
                     }
-                    .slide-images {
-                        width: 2400px;
-                        height: 600px;
-                        margin: 0 0 0 -1600px;
-                        position: relative;
-                        -webkit-animation-name: slide_animation;
-                        -webkit-animation-duration: 30s;
-                        -webkit-animation-iteration-count: infinite;
-                        -webkit-animation-direction: alternate;
-                        -webkit-animation-play-state: ease-in-out;
+                }
+                
+                .slide-images {
+                    width: 2400px;
+                    height: 600px;
+                    margin: 0 0 0 -1600px;
+                    position: relative;
+                    -webkit-animation-name: slide_animation;
+                    -webkit-animation-duration: 30s;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-animation-direction: alternate;
+                    -webkit-animation-play-state: ease-in-out;
+                }
+                
+                .img-container {
+                    height: 500px;
+                    width: 800px;
+                    position: relative;
+                    float: left;
+                }
+                
+                .img1 {
+                    width: auto;
+                    height: 600px;
+                }
+                /*---------slide animatio---------*/
+                
+                @keyframes slide_animation {
+                    0% {
+                        left: 0px
                     }
-                    .img-container {
-                        height: 500px;
-                        width: 800px;
-                        position: relative;
-                        float: left;
+                    10% {
+                        left: 0px
                     }
-                    .img1 {
-                        width: 800px;
-                        height: 600px;
+                    20% {
+                        left: 800px
                     }
-                    /*---------slide animatio---------*/
-                    @keyframes slide_animation {
-                        0% {
-                            left: 0px
-                        }
-                        10% {
-                            left: 0px
-                        }
-                        20% {
-                            left: 800px
-                        }
-                        30% {
-                            left: 800px
-                        }
-                        40% {
-                            left: 1600px
-                        }
-                        50% {
-                            left: 1600px
-                        }
-                        60% {
-                            left: 800px
-                        }
-                        70% {
-                            left: 800px
-                        }
-                        80% {
-                            left: 0px
-                        }
-                        90% {
-                            left: 0px
-                        }
-                        100% {
-                            left: 0px
-                        }
+                    30% {
+                        left: 800px
+                    }
+                    40% {
+                        left: 1600px
+                    }
+                    50% {
+                        left: 1600px
+                    }
+                    60% {
+                        left: 800px
+                    }
+                    70% {
+                        left: 800px
+                    }
+                    80% {
+                        left: 0px
+                    }
+                    90% {
+                        left: 0px
+                    }
+                    100% {
+                        left: 0px
                     }
                 }
                 
@@ -353,10 +353,12 @@
                     }
                     .main-header .contact {
                         font-size: 40px;
+                        color: rgb(10, 10, 10);
                         position: relative;
-                        animation: heading;
-                        animation-duration: 2s;
-                        animation-fill-mode: forwards;
+                        -webkit-animation: heading;
+                        -webkit-animation-duration: 3.5s;
+                        -webkit-animation-fill-mode: forwards;
+                        -webkit-animation-timing-function: ease-in;
                     }
                     .slider-frame {
                         overflow: hidden;
@@ -375,6 +377,9 @@
                         -webkit-animation-iteration-count: infinite;
                         -webkit-animation-direction: alternate;
                         -webkit-animation-play-state: ease-in-out;
+                    }
+                    .main-header p {
+                        font-size: 18px;
                     }
                     .img-container {
                         height: 500px;
@@ -457,67 +462,69 @@
                     .slider-frame {
                         overflow: hidden;
                         height: 700px;
-                        width: 400px;
+                        width: 500px;
                         margin: auto;
                         margin-top: 20px;
                     }
-                    .slide-images {
-                        width: 1200px;
-                        height: 700px;
-                        margin: 0 0 0 -800px;
-                        position: relative;
-                        -webkit-animation-name: slide_animation;
-                        -webkit-animation-duration: 30s;
-                        -webkit-animation-iteration-count: infinite;
-                        -webkit-animation-direction: alternate;
-                        -webkit-animation-play-state: ease-in-out;
+                }
+                
+                .slide-images {
+                    width: 1500px;
+                    height: 700px;
+                    margin: 0 0 0 -1000px;
+                    position: relative;
+                    -webkit-animation-name: slide_animation;
+                    -webkit-animation-duration: 30s;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-animation-direction: alternate;
+                    -webkit-animation-play-state: ease-in-out;
+                }
+                
+                .img-container {
+                    height: 500px;
+                    width: 500px;
+                    position: relative;
+                    float: left;
+                }
+                
+                .img1 {
+                    width: 500px;
+                    height: 400px;
+                }
+                /*---------slide animatio---------*/
+                
+                @keyframes slide_animation {
+                    0% {
+                        left: 0px
                     }
-                    .img-container {
-                        height: 500px;
-                        width: 400px;
-                        position: relative;
-                        float: left;
+                    10% {
+                        left: 0px
                     }
-                    .img1 {
-                        width: 400px;
-                        height: 400px;
+                    20% {
+                        left: 500px
                     }
-                    /*---------slide animatio---------*/
-                    @keyframes slide_animation {
-                        0% {
-                            left: 0px
-                        }
-                        10% {
-                            left: 0px
-                        }
-                        20% {
-                            left: 400px
-                        }
-                        30% {
-                            left: 400px
-                        }
-                        40% {
-                            left: 800px
-                        }
-                        50% {
-                            left: 800px
-                        }
-                        60% {
-                            left: 400px
-                        }
-                        70% {
-                            left: 400px
-                        }
-                        80% {
-                            left: 0px
-                        }
-                        90% {
-                            left: 0px
-                        }
-                        100% {
-                            left: 0px
-                        }
+                    30% {
+                        left: 500px
+                    }
+                    40% {
+                        left: 1000px
+                    }
+                    50% {
+                        left: 1000px
+                    }
+                    60% {
+                        left: 500px
+                    }
+                    70% {
+                        left: 500px
+                    }
+                    80% {
+                        left: 0px
+                    }
+                    90% {
+                        left: 0px
+                    }
+                    100% {
+                        left: 0px
                     }
                 }
-
-
