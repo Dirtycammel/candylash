@@ -463,8 +463,8 @@
 @media (max-width:400px) {
     .slider-frame {
         overflow: hidden;
-        height: 700px;
-        width: 500px;
+        height: 360px;
+        width: 385px;
         margin: auto;
         margin-top: 20px;
     }
