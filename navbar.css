@@ -364,15 +364,15 @@
     }
     .slider-frame {
         overflow: hidden;
-        height: 700px;
-        width: 600px;
+        height: 420px;
+        width: 450px;
         margin: auto;
         margin-top: 20px;
     }
     .slide-images {
-        width: 1800px;
+        width: 1500px;
         height: 700px;
-        margin: 0 0 0 -1200px;
+        margin: 0 0 0 -1000px;
         position: relative;
         -webkit-animation-name: slide_animation;
         -webkit-animation-duration: 30s;
@@ -385,7 +385,7 @@
     }
     .img-container {
         height: 500px;
-        width: 600px;
+        width: 490px;
         position: relative;
         float: left;
     }
@@ -402,22 +402,22 @@
             left: 0px
         }
         20% {
-            left: 600px
+            left: 480px
         }
         30% {
-            left: 600px
+            left: 480px
         }
         40% {
-            left: 1200px
+            left: 960px
         }
         50% {
-            left: 1200px
+            left: 960px
         }
         60% {
-            left: 600px
+            left: 480px
         }
         70% {
-            left: 600px
+            left: 480px
         }
         80% {
             left: 0px
@@ -459,7 +459,6 @@
         display: flex;
     }
 }
-
 @media (max-width:500px) {
     .slider-frame {
         overflow: hidden;
