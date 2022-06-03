@@ -29,6 +29,12 @@ body {
     margin: auto;
 }
 
+hr {
+    border: 1px solid black;
+    width: 1200px;
+    margin: auto;
+}
+
 @media(max-width:1200px) {
     .style-grid {
         width: auto;
@@ -42,21 +48,31 @@ body {
         text-align: center;
         width: auto;
     }
+    hr {
+        border: 1px solid black;
+        width: auto;
+    }
 }
 
-@media(max-width:840px) {
+@media(max-width:800px) {
     .style-grid {
         margin: 100px auto;
+        width: auto;
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    .eyes {
-        height: 100px;
-        width: 400px;
+    .pictures-grid {
+        height: 220px;
     }
-}
-
-p {
-    margin: 0 10px;
+    .eyes {
+        height: 90px;
+        width: 370px;
+    }
+    p {
+        margin: 0 10px;
+    }
+    hr {
+        border: 1px solid black;
+    }
 }
