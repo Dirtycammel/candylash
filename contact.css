@@ -1,0 +1,29 @@
+body {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+.main-name {
+    width: 1200px;
+    margin: auto;
+}
+
+.main-name a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(247, 224, 228);
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.main-name a:hover {
+    opacity: .8;
+}
+
+@media(max-width:1200px) {
+    .main-name {
+        width: auto;
+        margin: 0 10px;
+    }
+}
