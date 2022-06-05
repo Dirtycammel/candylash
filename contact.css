@@ -26,7 +26,8 @@ body {
 }
 
 .main-name ul li {
-    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .main-name a:hover {
@@ -38,5 +39,20 @@ body {
     .main-name {
         width: auto;
         margin: 0 10px;
+    }
+}
+
+@media(max-width:500px) {
+    .main-name ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+    }
+    .main-name ul li {
+        margin-top: 40px;
+        margin-right: 40px;
     }
 }
