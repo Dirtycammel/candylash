@@ -19,7 +19,7 @@ body {
 
 .main-name ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     align-items: center;
     list-style: none;
